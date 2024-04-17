@@ -1,0 +1,235 @@
+body, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+button, select, textarea, input, p{
+  margin: 0;
+}
+
+body {
+  display: flex;
+  max-width: 60vw;
+  min-height: 100vh;
+  margin: auto;
+  justify-content: center;
+
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-title{
+  letter-spacing: 2px;
+  color: #ff7f50;
+  transition: 0.3s;
+}
+.app-title:hover{
+  color: orangered;
+}
+ul{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+}
+li{
+  display: flex;
+  align-items: center;
+}
+nav button{
+  box-shadow: 3px 3px rgba(110, 108, 108, 0.226);
+}
+
+main{
+  min-height: 80vh;
+}
+.footer{
+display: flex;
+padding: 30px;
+border-top: 1px solid gray;
+margin-top: 20px;
+align-items: end;
+justify-content: center;
+gap: 10px;
+bottom: 0;
+}
+.footer-list{
+  display: flex;
+
+  gap: 20px;
+  font-size: 1.125rem;
+  opacity: 0.8;
+  
+}
+
+
+.error{
+  color: crimson;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-items: center;
+  padding-left: 10px;
+}
+.main-nav{
+  min-width: 60vw;
+  padding-block: 30px;
+  padding-bottom: 50px;
+}
+.main-nav h2{
+  padding-left: 5px;
+}
+
+.note-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  background-color: #0104114f;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+.note-card{
+  background-color: #161518;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 3px 3px rgba(110, 108, 108, 0.226);
+  opacity: 0;
+  transition: 0.2s;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+.note-card:hover{
+  background-color: #000000c5;
+  box-shadow: 3px 3px 15px rgba(110, 108, 108, 0.226);
+
+}
+.note-card h3{
+  margin: 0 ;
+  padding: 0;
+}
+.note-card p{
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+  
+}
+
+.archivedNote{
+  background-color: #14121d;
+}
+
+.arcIcon{
+  background-color: coral;
+  color: #130f0d;
+  font-weight: 600;
+  padding: 10px;
+}
+.arcIcon:hover{
+  background-color: coral;
+}
+.card-nav{
+  padding: 0;
+}
+
+.card-content{
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.card-footer{
+  display: flex;
+  gap: 5px;
+}
+
+
+.category{
+  background-color: #264b26;
+  background-color: rgb(83, 21, 21);
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 3px 3px rgba(10, 1, 1, 0.274);
+  word-break: break-all;
+}
+.category:hover{
+  background-color: #0d300d;
+  background-color: rgb(58, 15, 15);
+
+  scale:1.05;
+
+}
+.new-note{
+  background-color: #010411;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+
+}
+.delete-category{
+  margin-left: 10px;
+  padding: 3px 7px;
+  background-color: transparent;
+  color: orangered;
+}
+.add-category{
+  display: flex;
+  gap: 5px;
+}
+
+
+.category-page{
+  display: flex;
+  gap: 20px;
+
+}
+
+.category-container{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 10px;
+  background-color: #0104114f;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.category-page > .category-container > .category{
+ padding: 5px 10px;
+ display: flex;
+ outline: 1px solid #130f0d;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+
+}
+
+.category-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.add-category{
+  display: flex;
+}
