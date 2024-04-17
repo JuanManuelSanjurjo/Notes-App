@@ -1,14 +1,22 @@
-# Runtimes and Tools Used in the Backend and Frontend
+# Ensolvers Challenge -  Juan Manuel Sanjurjo
+
+### Runtimes and Tools Used in the Backend and Frontend
 
 ### NPM 10.2.5
 
-### To start de app run the following command:
+### To start de app in Unix/Linux systems run the following command:
 
 ```bash
 chmod +x start.sh && ./start.sh
 ```
 
 The command will allow the script for execution and then set up SQLite and Prisma DB, install dependencies and run all needed services
+
+If you want to open Prisma Studio `cd to backend` folder and run the following command:
+
+```bash
+npx prisma studio
+```
   
 ## Backend
 

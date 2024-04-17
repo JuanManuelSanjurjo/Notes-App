@@ -39,6 +39,14 @@ function NoteList({tabSelected, filter= ""}) {
     fetchData();
 }, [filter]);
 
+  if(notes.length === 0 && activeNotes.length === 0 && archivedNotes.length === 0 ){
+    return (
+      <div className="note-list">
+        <i style={{opacity: 0.8}}>No notes yet</i>
+      </div>
+    )
+  }
+
 
   return (
     <div className="note-list">

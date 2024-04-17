@@ -20,10 +20,12 @@ function AddCategory({categories, setCategories}) {
                     })
                 })
             const data = await response.json();
-            if(response.status === 400){
+            const hasCategory = categories.some(category => category.name === newCategory)
+
+            if(response.status === 400 && hasCategory){
                 setError("Category already added")
             }
-            if (categories.every(category => category.name !== newCategory)) {
+            if (!hasCategory) {
                 setCategories([...categories, data])
             }
             inputRef.current.value = ""

@@ -46,7 +46,6 @@ router.put("/notes", async (req, res) => {
 })
 
 router.delete("/notes", async (req, res) => {
-    console.log(req.body)
     const deletedNote = await prisma.note.delete({
         where: {
           id: req.body.id,

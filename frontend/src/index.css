@@ -113,7 +113,6 @@ bottom: 0;
 .note-card:hover{
   background-color: #000000c5;
   box-shadow: 3px 3px 15px rgba(110, 108, 108, 0.226);
-
 }
 .note-card h3{
   margin: 0 ;
@@ -198,9 +197,13 @@ bottom: 0;
   gap: 5px;
 }
 
-
+pre{
+  text-wrap: balance;
+}
 .category-page{
   display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   gap: 20px;
 
 }
@@ -208,7 +211,7 @@ bottom: 0;
 .category-container{
   display: flex;
   flex-direction: column;
-  width: 20%;
+  min-width: fit-content ;
   gap: 10px;
   background-color: #0104114f;
   padding: 20px;
