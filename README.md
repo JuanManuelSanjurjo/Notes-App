@@ -7,6 +7,8 @@
 ```bash
 chmod +x start.sh && ./start.sh
 ```
+
+The command will allow the script for execution and then set up SQLite and Prisma DB, install dependencies and run all needed services
   
 ## Backend
 
