@@ -1,4 +1,10 @@
-# Ensolvers Challenge -  Juan Manuel Sanjurjo
+# Notes App 
+
+This is a Fullstack application using Node.js(Express.js), React.js(Vite.js), SQLite and Prisma ORM
+
+that allows users to create, read, update and delete notes.
+
+the user can also categorize notes and filter them based on the dreated categories.
 
 ### Runtimes and Tools Used in the Backend and Frontend
 
