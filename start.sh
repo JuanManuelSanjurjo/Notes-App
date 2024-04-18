@@ -19,7 +19,7 @@ echo -e "${YELLOW}Installing backend dependencies...${YELLOW}"
 npm install
 
 echo -e "${YELLOW}Configuring SQLite database with Prisma...${YELLOW}"
-npx prisma migrate dev --todo-app-db 
+npx prisma migrate dev 
 
 # Inicia el servidor backend con SQLite
 echo -e "${YELLOW}Starting backend server...${YELLOW}"

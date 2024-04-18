@@ -1,19 +1,19 @@
-# Notes App 
-
-This is a Fullstack application using Node.js(Express.js), React.js(Vite.js), SQLite and Prisma ORM
-
-that allows users to create, read, update and delete notes.
-
-the user can also categorize notes and filter them based on the dreated categories.
+# Ensolvers Challenge -  Juan Manuel Sanjurjo
 
 ### Runtimes and Tools Used in the Backend and Frontend
 
 ### NPM 10.2.5
 
-### To start de app in Unix/Linux systems run the following command:
+### To start de app in Unix/Linux systems run the following command in the project folder:
 
 ```bash
 chmod +x start.sh && ./start.sh
+```
+
+### To start de app in Windows systems run the following command in the project folder:
+
+```powershell
+PowerShell -ExecutionPolicy Bypass -File './start.ps1'; & './start.ps1'
 ```
 
 The command will allow the script for execution and then set up SQLite and Prisma DB, install dependencies and run all needed services
